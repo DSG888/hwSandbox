@@ -13,4 +13,4 @@ clean:
 	rm -rf $(EXECUTABLE) main.o
 
 flash: all
-	avrdude -c usbtiny -p atmega8 -U flash:w:$(EXECUTABLE)
+	avrdude -c usbtiny -p atmega328p -U flash:w:$(EXECUTABLE)
